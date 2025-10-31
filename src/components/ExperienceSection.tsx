@@ -28,7 +28,7 @@ export function ExperienceSection({ onConsultClick }: ExperienceSectionProps) {
             <div className="flex justify-center">
               <div className="w-full max-w-xs sm:max-w-md">
                 <img 
-                  src="/img/1.png" 
+                  src="/1.png" 
                   alt="Thương Hiệu Được Xây Dựng Trên Nền Tảng Hiểu Mình" 
                   className="w-full h-auto object-contain rounded-lg"
                 />
@@ -67,7 +67,7 @@ export function ExperienceSection({ onConsultClick }: ExperienceSectionProps) {
             <div className="flex justify-center order-1 md:order-2">
               <div className="w-full max-w-xs sm:max-w-md">
                 <img 
-                  src="/img/2.png" 
+                  src="/2.png" 
                   alt="Cơ Chế Đồng Hành - Xây Dựng - Phân Chiếu" 
                   className="w-full h-auto object-contain rounded-lg"
                 />
@@ -82,7 +82,7 @@ export function ExperienceSection({ onConsultClick }: ExperienceSectionProps) {
             <div className="flex justify-center">
               <div className="w-full max-w-xs sm:max-w-md">
                 <img 
-                  src="/img/3.png" 
+                  src="/3.png" 
                   alt="Phương Pháp Làm Việc Dựa Trên Hiểu - Thực - Phản Chiếu" 
                   className="w-full h-auto object-contain rounded-lg"
                 />

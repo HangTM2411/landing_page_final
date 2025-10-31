@@ -62,7 +62,7 @@ export function HeroSection({ onConsultClick }: HeroSectionProps) {
           <div className="relative hidden md:block">
             <div className="relative z-10 flex items-center justify-center">
               <img 
-                src="/img/Up Web 2.png" 
+                src="/Up Web 2.png" 
                 alt="Verza Logo" 
                 className="w-full max-w-md h-auto object-contain"
               />

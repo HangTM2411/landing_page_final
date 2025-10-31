@@ -18,7 +18,7 @@ export function Navigation({ onConsultClick }: NavigationProps) {
         {/* Logo */}
         <div className="flex items-center gap-2">
           <img 
-            src="/img/white_logo.png" 
+            src="/white_logo.png" 
             alt="Logo" 
             className="h-12 w-auto object-contain"
           />

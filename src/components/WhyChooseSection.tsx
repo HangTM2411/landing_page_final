@@ -49,7 +49,7 @@ export function WhyChooseSection() {
           <ScrollAnimation delay={0.2}>
             <div className="flex items-center justify-center py-6 lg:py-0">
               <img 
-                src="/img/white_logo_black_back.png" 
+                src="/white_logo_black_back.png" 
                 alt="Verza Logo" 
                 className="w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 object-contain rounded-full shadow-xl"
               />

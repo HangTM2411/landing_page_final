@@ -8,11 +8,11 @@ export function ServicesSection() {
   const [direction, setDirection] = useState(0);
   
   const slides = [
-    { title: 'Dịch vụ 1', image: '/img/Service1.png' },
-    { title: 'Dịch vụ 2', image: '/img/Service2.png' },
-    { title: 'Dịch vụ 3', image: '/img/Service3.png' },
-    { title: 'Dịch vụ 4', image: '/img/Service4.png' },
-    { title: 'Dịch vụ 5', image: '/img/Service5.png' }
+    { title: 'Dịch vụ 1', image: '/Service1.png' },
+    { title: 'Dịch vụ 2', image: '/Service2.png' },
+    { title: 'Dịch vụ 3', image: '/Service3.png' },
+    { title: 'Dịch vụ 4', image: '/Service4.png' },
+    { title: 'Dịch vụ 5', image: '/Service5.png' }
   ];
   
   const nextSlide = () => {

@@ -21,7 +21,7 @@ export function CaseStudySection() {
           </p>
         </>
       ),
-      image: '/img/case_study_1.jpg'
+      image: '/case_study_1.jpg'
     },
     {
       title: 'Case Study 2: HC Thiện',
@@ -34,7 +34,7 @@ export function CaseStudySection() {
           <p>✅ Đang sở hữu trang cá nhân, cộng đồng Cát bà review Tất Tần Tật ~ 580.000 thành viên và thương hiệu cá nhân TIT Travel</p>
         </div>
       ),
-      image: '/img/case_study_2.jpg'
+      image: '/case_study_2.jpg'
     },
     {
       title: 'Case Study 3: Calligraffiti by Nads',
@@ -50,7 +50,7 @@ export function CaseStudySection() {
           <p>✅ Calligraffiti by Nads nhanh chóng được xem như thương hiệu nghệ thuật trẻ tiên phong, kết nối văn hóa viết tay và phong cách sống đô thị.</p>
         </div>
       ),
-      image: '/img/case_study_3.jpg'
+      image: '/case_study_3.jpg'
     }
   ];
 

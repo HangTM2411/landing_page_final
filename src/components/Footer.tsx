@@ -13,7 +13,7 @@ export function Footer({ onConsultClick }: FooterProps) {
           <ScrollAnimation direction="left">
             <div className="flex items-center gap-3 sm:gap-4 justify-center md:justify-start">
             <img 
-              src="/img/logo_noname.png" 
+              src="/logo_noname.png" 
               alt="Verza Logo" 
               className="h-14 sm:h-16 md:h-20 w-auto object-contain"
             />

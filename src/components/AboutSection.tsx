@@ -12,7 +12,7 @@ export function AboutSection({ onConsultClick }: AboutSectionProps) {
         <ScrollAnimation direction="left">
           <div className="flex items-center justify-center">
             <img 
-              src="/img/black_logo.png" 
+              src="/black_logo.png" 
               alt="Verza Logo" 
               className="w-48 sm:w-56 md:w-64 h-auto object-contain"
             />
