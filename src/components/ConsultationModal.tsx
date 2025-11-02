@@ -65,11 +65,7 @@ export function ConsultationModal({ open, onOpenChange }: ConsultationModalProps
       
       const fullUrl = `${baseUrl}?${params.toString()}`;
       
-      // Phương pháp 1: Sử dụng Image để gửi GET request (bypass CORS)
-      const img = new Image();
-      img.src = fullUrl;
-      
-      // Phương pháp 2: Mở trong iframe ẩn để submit POST
+      // Gửi form qua iframe ẩn (POST method)
       const iframe = document.createElement('iframe');
       iframe.name = 'hidden_iframe_' + Date.now();
       iframe.style.display = 'none';
