@@ -6,6 +6,16 @@ interface HeroSectionProps {
 }
 
 export function HeroSection({ onConsultClick }: HeroSectionProps) {
+  // Hàm scroll mượt mà xuống AboutSection
+  const scrollToAbout = () => {
+    const aboutSection = document.getElementById('about');
+    if (aboutSection) {
+      aboutSection.scrollIntoView({ 
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+  };
   return (
     <section className="bg-gradient-to-br from-[#0a0a2a] via-[#1a2a4a] to-[#2a1a5a] text-white py-12 sm:py-16 md:py-20 px-4 sm:px-6 md:px-12 lg:px-20 relative overflow-hidden w-full">
       {/* Decorative elements */}
@@ -49,7 +59,7 @@ export function HeroSection({ onConsultClick }: HeroSectionProps) {
           </div>
           
           <button 
-            onClick={onConsultClick}
+            onClick={scrollToAbout}
             className="bg-gradient-to-r from-blue-500 to-purple-600 text-white px-5 sm:px-6 md:px-8 py-2.5 sm:py-3 rounded-full hover:from-blue-600 hover:to-purple-700 transition-all shadow-lg hover:shadow-xl flex items-center gap-2 text-xs sm:text-sm md:text-base"
           >
             TÌM HIỂU NGAY

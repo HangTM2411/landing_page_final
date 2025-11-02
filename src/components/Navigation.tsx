@@ -8,8 +8,17 @@ interface NavigationProps {
 export function Navigation({ onConsultClick }: NavigationProps) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-  const handleNavClick = () => {
+  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, targetId: string) => {
+    e.preventDefault();
     setMobileMenuOpen(false);
+    
+    const element = document.getElementById(targetId);
+    if (element) {
+      element.scrollIntoView({ 
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
   };
 
   return (
@@ -26,10 +35,10 @@ export function Navigation({ onConsultClick }: NavigationProps) {
         
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center gap-6 lg:gap-8">
-          <a href="#about" className="hover:text-blue-400 transition-colors text-sm lg:text-base">GIỚI THIỆU</a>
-          <a href="#values" className="hover:text-blue-400 transition-colors text-sm lg:text-base">GIÁ TRỊ</a>
-          <a href="#contact" className="hover:text-blue-400 transition-colors text-sm lg:text-base">LIÊN HỆ</a>
-          <a href="#services" className="hover:text-blue-400 transition-colors text-sm lg:text-base">SẢN PHẨM</a>
+          <a href="#about" onClick={(e) => handleNavClick(e, 'about')} className="hover:text-blue-400 transition-colors text-sm lg:text-base cursor-pointer">GIỚI THIỆU</a>
+          <a href="#values" onClick={(e) => handleNavClick(e, 'values')} className="hover:text-blue-400 transition-colors text-sm lg:text-base cursor-pointer">GIÁ TRỊ</a>
+          <a href="#contact" onClick={(e) => handleNavClick(e, 'contact')} className="hover:text-blue-400 transition-colors text-sm lg:text-base cursor-pointer">LIÊN HỆ</a>
+          <a href="#services" onClick={(e) => handleNavClick(e, 'services')} className="hover:text-blue-400 transition-colors text-sm lg:text-base cursor-pointer">SẢN PHẨM</a>
           <button 
             onClick={onConsultClick}
             className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 px-4 lg:px-6 py-2 rounded-full transition-all flex items-center gap-2 text-sm lg:text-base whitespace-nowrap shadow-lg"
@@ -54,36 +63,36 @@ export function Navigation({ onConsultClick }: NavigationProps) {
         <div className="md:hidden mt-4 pb-4 space-y-4 animate-in slide-in-from-top-5 duration-200">
           <a 
             href="#about" 
-            className="block py-2 hover:text-blue-400 transition-colors"
-            onClick={handleNavClick}
+            className="block py-2 hover:text-blue-400 transition-colors cursor-pointer"
+            onClick={(e) => handleNavClick(e, 'about')}
           >
             GIỚI THIỆU
           </a>
           <a 
             href="#values" 
-            className="block py-2 hover:text-blue-400 transition-colors"
-            onClick={handleNavClick}
+            className="block py-2 hover:text-blue-400 transition-colors cursor-pointer"
+            onClick={(e) => handleNavClick(e, 'values')}
           >
             GIÁ TRỊ
           </a>
           <a 
             href="#contact" 
-            className="block py-2 hover:text-blue-400 transition-colors"
-            onClick={handleNavClick}
+            className="block py-2 hover:text-blue-400 transition-colors cursor-pointer"
+            onClick={(e) => handleNavClick(e, 'contact')}
           >
             LIÊN HỆ
           </a>
           <a 
             href="#services" 
-            className="block py-2 hover:text-blue-400 transition-colors"
-            onClick={handleNavClick}
+            className="block py-2 hover:text-blue-400 transition-colors cursor-pointer"
+            onClick={(e) => handleNavClick(e, 'services')}
           >
             SẢN PHẨM
           </a>
           <button 
             onClick={() => {
               onConsultClick();
-              handleNavClick();
+              setMobileMenuOpen(false);
             }}
             className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 px-6 py-3 rounded-full transition-all flex items-center justify-center gap-2 shadow-lg"
           >
